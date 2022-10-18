@@ -31,3 +31,22 @@ It can also maintain accuracy when a large proportion of data is missing.
 
 
 # SVC
+
+Support Vector Machine(SVM) is a supervised machine learning algorithm used for both classification and regression. Though we say regression problems as well its best suited for classification. The objective of SVM algorithm is to find a hyperplane in an N-dimensional space that distinctly classifies the data points. The dimension of the hyperplane depends upon the number of features. If the number of input features is two, then the hyperplane is just a line. If the number of input features is three, then the hyperplane becomes a 2-D plane. It becomes difficult to imagine when the number of features exceeds three. 
+
+Let’s consider two independent variables x1, x2 and one dependent variable which is either a blue circle or a red circle.
+
+<img width="467" alt="image" src="https://user-images.githubusercontent.com/76823502/196407789-2f9f931d-1513-45b5-bd3d-3155f9b7eceb.png">
+
+From the figure above its very clear that there are multiple lines (our hyperplane here is a line because we are considering only two input features x1, x2) that segregates our data points or does a classification between red and blue circles. So how do we choose the best line or in general the best hyperplane that segregates our data points.
+
+SVM Kernel:
+
+The SVM kernel is a function that takes low dimensional input space and transforms it into higher-dimensional space, ie it converts non separable problem to separable problem. It is mostly useful in non-linear separation problems. Simply put the kernel, it does some extremely complex data transformations then finds out the process to separate the data based on the labels or outputs defined.
+
+Advantages of SVM:
+
+Effective in high dimensional cases
+Its memory efficient as it uses a subset of training points in the decision function called support vectors
+Different kernel functions can be specified for the decision functions and its possible to specify custom kernels
+
