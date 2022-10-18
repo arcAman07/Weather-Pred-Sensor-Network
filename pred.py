@@ -17,3 +17,6 @@ from sklearn import preprocessing
   
 # label_encoder object knows how to understand word labels.
 label_encoder = preprocessing.LabelEncoder()
+filename = 'finalized_model.sav'
+# load the model from disk
+loaded_model = pickle.load(open(filename, 'rb'))
