@@ -13,3 +13,7 @@ hv.extension('bokeh')
 import warnings
 warnings.filterwarnings("ignore")
 import pickle
+from sklearn import preprocessing
+  
+# label_encoder object knows how to understand word labels.
+label_encoder = preprocessing.LabelEncoder()
